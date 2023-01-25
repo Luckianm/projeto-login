@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Projeto Login</title>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div id="image">
+                <!-- image -->
+            </div>
+            <div id="formLogin">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configuraçoes no seu
+                    ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="field">
+                        <span class="material-icons">person</span>
+                        <input type="email" id="iemail" name="email" placeholder="Seu E-mail" autocomplete="email" maxlength="30" required>
+                        <label for="iemail">E-mail</label>
+                    </div>
+                    <div class="field">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" id="ipassword" name="password" placeholder="Sua Senha"
+                            autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="ipassword">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="forgotPassword">Esqueci a senha <i class="material-icons">mail</i></a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
